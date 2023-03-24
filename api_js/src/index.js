@@ -9,6 +9,15 @@ app.get("/", function(req, res) {
     res.status(200).json({message : "Resposta enviada em JSON"});
 });
 
+// EXERCÍCIO - Criar uma nova rota/funcionalidade para receber uma
+// informação para URL da requisição
+
+app.get("/:categoria", (request, response) => { // é o msm q o function, só escrito de maneira diferente
+    console.log(request.params.categoria);
+});
+
+
+
 // O comando listen roda a aplicação
 app.listen(3000, function(){
     console.clear();
