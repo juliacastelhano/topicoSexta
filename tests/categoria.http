@@ -1,0 +1,22 @@
+### Requisição para a raiz da aplicação
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/CATEGORIA
+
+#### Requisição passando parâmetros na URL
+GET http://localhost:3000/comida/arroz
+
+### Requisição passando informação pelo corpo da requisição
+POST http://localhost:3000
+Content-Type: application/json
+
+// ter. pelo menos, uma linha de espaço entre requisição e objetos
+
+//OBJETO
+{
+    "id" : 1,
+    "nome" : "Alimento",
+    "descricao" : "Descrição da categoria"
+}
+
